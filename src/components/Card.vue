@@ -1,7 +1,7 @@
 <template>
      <div class="gallery-item">
         <img :src="thumbnailUrl" :alt="`image to ${title}`">
-        <div class="gallery-item__overlay">
+        <div class="gallery-item__overlay" @click="">
             <p class="gallery-item__title">{{title}}</p>
             <p class="gallery-item__kind">Branding</p>
         </div>
