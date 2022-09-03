@@ -1,8 +1,8 @@
 <template>
     <section class="filters">
-        <button @click="showAll">All</button>
-        <button @click="showEven">Even</button>
-        <button @click="showOdd">odd</button>
+        <button :class="{'active': isShowAll}" @click="showAll">All</button>
+        <button :class="{'active': isShowEven}" @click="showEven">Even</button>
+        <button :class="{'active': isShowOdd}" @click="showOdd">odd</button>
     </section>
     <section class="grid-gallery">
         <Card
@@ -97,6 +97,10 @@ import Card from './Card.vue';
     button{
         font-size: calculateRem(13px);
         color: $grey-color;
+        &.active{
+            background-color: $main-color;
+            color: $white;
+        }
     }
 }
 .show-more{
