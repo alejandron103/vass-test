@@ -1,0 +1,75 @@
+@import './varibles.scss';
+
+:root {
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: $grey-color;
+  background-color: $white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  padding: 10px;
+  font-size: calculateRem(8px);
+  font-weight: 600;
+  background-color: $white;
+  color: $main-color;
+  cursor: pointer;
+  transition: 0.25s;
+  border: none;
+  font-family: $font-family;
+  width: 120px;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: $main-color;
+    color: $white;
+    border: 1px solid $white;
+  }
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.t-uppercase {
+  text-transform: uppercase;
+}
+
+.btn-red{
+  background-color: $main-color;
+  color: $white;
+}
+
+a{
+  text-decoration: none;
+}
+
+#app {
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  letter-spacing: 5px;
+}
+
+.t-red{
+  color: $main-color;
+}
+
+.copyright{
+  font-size: calculateRem(10px);
+}

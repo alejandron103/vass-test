@@ -1,0 +1,15 @@
+$white: #ffffff;
+$black: #000000;
+$main-color: #EB6375;
+$grey-color: #6A6A6A;
+
+$font-family: 'Open Sans', sans-serif;
+
+$md-screen: 768px;
+$sm-screen: 500px;
+$xs-screen: 350px;
+
+@function calculateRem($size) {
+    $remSize: calc($size / 16px);
+    @return #{$remSize}rem;
+}
