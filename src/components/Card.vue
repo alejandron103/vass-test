@@ -30,7 +30,7 @@ import { defineComponent } from 'vue';
     @media (max-width: $xs-screen) {
         width: 100%;
     }
-    &:hover{
+    &:hover, &:active, &:visited{
         .gallery-item__overlay{
             opacity: 1;
         }
