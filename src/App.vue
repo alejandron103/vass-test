@@ -5,7 +5,7 @@
   import Banner from './components/Banner.vue'
   import GridGallery from './components/GridGallery.vue';
   import { CONSTANTS } from './utils/contants'
-  import Footer from './components/footer.vue';
+  import Footer from './components/Footer.vue';
 </script>
 
 <template>
